@@ -1,0 +1,59 @@
+:root {
+  --bg: #050810;
+  --bg-card: #0d1117;
+  --accent: #00ffc8;
+  --accent-dim: #00ffc820;
+  --accent2: #7b61ff;
+  --text: #e8eaf0;
+  --text-muted: #6b7280;
+  --border: #1e2535;
+  --font-mono: 'Space Mono', monospace;
+  --font-display: 'Syne', sans-serif;
+  --radius: 12px;
+}
+
+/* reseting browser default styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  overflow-x: hidden; 
+  line-height: 1.6;
+}
+
+/* matches dark theme for scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* change color when select text */
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* for accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}

@@ -1,6 +1,8 @@
 // set as entry point in HTML shell
 // renders App.jsx into DOM
 
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import App from './App'
 import "./styles.css"
 

@@ -1,9 +1,7 @@
-// Vite is the build tool I am using
-// enabling JSX transformation in defineConfig()
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-
+// https://vite.dev/config/
 export default defineConfig({
-	plugins: [react()],
-});
+  plugins: [react()],
+})
